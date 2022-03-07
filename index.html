@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://raw.githack.com/programming2007/illustration/main/illustration.min.css">
+    <link rel="stylesheet" href="imageEditor.css">
+</head>
+
+<body>
+    <div id="main">
+        <span class="headinh pink-bg">Design Wizard</span>
+        <br>
+        <input class="input" id="url" placeholder="Enter image url" required />
+        <br>
+        <button class="btn firstbtn" onclick="change()">Change</button>
+        <br />
+        <br />
+        <img id="imgq" src="https://placeimg.com/200/200/nature/7">
+        <span>Blur</span>
+        <input type="range" min="0" max="30" value="0" class="slider" onchange="blurf(this.value)">
+        <span>Brightness</span>
+        <input type="range" min="0" max="200" value="100" class="slider" onchange="brightness(this.value)">
+        <span>Sepia</span>
+        <input type="range" min="0" max="100" value="0" class="slider" onchange="sepia(this.value)">
+        <span>Opacity</span>
+        <input type="range" min="0" max="1" value="1" step="0.1" class="slider" onchange="opacity(this.value)">
+        <span>Contrast</span>
+        <input type="range" min="0" max="200" value="100" class="slider" id="myRange5" onchange="contrast(this.value)">
+        <span>Greyscale</span>
+        <input type="range" min="0" max="100" value="0" class="slider" onchange="gray(this.value)">
+        <button class="btn" id="rotate" onclick="rot()">Rotate</button>
+    </div>
+</body>
+
+</html>
